@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "a3679699a144033b533b",
-    "url": "/koke_React/static/css/main.ecae92d0.chunk.css"
+    "revision": "ab8803bc5bb18e823e6e",
+    "url": "/koke_React/static/css/main.4e4386f0.chunk.css"
   },
   {
-    "revision": "a3679699a144033b533b",
+    "revision": "ab8803bc5bb18e823e6e",
     "url": "/koke_React/static/js/main.f9f21a65.chunk.js"
   },
   {
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/koke_React/static/media/main_banner.a171e587.jpg"
   },
   {
-    "revision": "ad35e38526bfa0309b2815238ce5b49b",
+    "revision": "d9e1ece2f9e614696a5f2253b86f5bbf",
     "url": "/koke_React/index.html"
   }
 ];
