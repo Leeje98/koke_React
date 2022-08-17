@@ -2747,7 +2747,7 @@ const all_product = [
     },
     {
         id: 'product_01',
-        link: '/allCoffee/coffeeDetail/product_01',
+        link: '/allCoffee/coffeeDetail',
         name: '나비',
         taste01: '꽃향기',
         taste02: '과일',
