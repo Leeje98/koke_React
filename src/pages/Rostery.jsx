@@ -1,6 +1,7 @@
 import React from 'react'
 import './Rostery.css';
 import all_rostery from '../components/All_Rostery_list';
+import { Link } from 'react-router-dom';
 
 
 export default function Rostery() {
@@ -9,7 +10,7 @@ export default function Rostery() {
       <wrap className='wrap'>
         <div className='outer_box'>
           <div className='nav_box'>
-            <a href='/'>홈</a> > <a href='/allRostery'>로스터리</a>
+            <a href='/'>홈</a> {'>'} <a href='/allRostery'>로스터리</a>
           </div>
           <div className='text_box'>
             <h2>All Rostery</h2>
@@ -24,12 +25,12 @@ export default function Rostery() {
               all_rostery.map((value, i) => {
                 return (
                   
-                    <a className='rostery_box' href={value.link}>
+                    <Link to={value.link} className='rostery_box'>
                       <div className='img_box'>
                         <img src={`./imags/Rostary_logo/${value.logoImg}`} alt="로스터리 로고" />
                       </div>
                       <div className='text'>{value.cafeName}</div>
-                    </a>
+                    </Link>
                 )
               })
             }

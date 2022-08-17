@@ -66,10 +66,8 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='/allCoffee' element={<AllCoffee />} />
         <Route path='/allCoffee/coffeeDetail' element={<CoffeeDetail />} />
-        <Route path='/allCoffee/coffeeDetail/:id' element={<CoffeeDetail />} />
         <Route path='/allRostery' element={<Rostery />} />
         <Route path='/allRostery/rosteryDetail' element={<RosteryDetail />} />
-        <Route path='/allRostery/rosteryDetail/:id' element={<RosteryDetail />} />
         <Route path='/subscription' element={<Subscription />} />
       </Routes>
       
