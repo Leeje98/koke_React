@@ -3,7 +3,7 @@ import './Main.css';
 import MainVisual from '../components/MainVisual';
 import rostery from '../components/Rostery_list';
 import main_best from '../components/MainBest_list';
-import { Navigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
@@ -32,7 +32,7 @@ export default function Main() {
                 {
                     main_best.map((value, i) => {
                         return (
-                            <a className='col-md-3 best_product'  href={value.link}> 
+                            <Link to={value.link} className='col-md-3 best_product'>
                                 <div className='main_poto'>
                                     <img src={`./imags/main/pd_${value.imgNumber}.png`} alt="이미지" width='280px'/>
                                     
@@ -52,8 +52,7 @@ export default function Main() {
                                         <p>{value.cafeName}</p>
                                     </div>
                                 </div>
-                            </a>
-                            // </Link>
+                            </Link>
                         )
                     })
                 }
@@ -81,7 +80,7 @@ export default function Main() {
                 {
                     rostery.map((value, i) => {
                         return (
-                            <a className='col-md-3'  href={value.link}> 
+                            <Link to={value.link} className='col-md-3'>
                                 <div className='main_poto'>
                                     <img src={`./imags/main/roastery_${i+1}.jpg`} alt="이미지" width='280px'/>
                                 </div>
@@ -93,7 +92,7 @@ export default function Main() {
                                     <h5>{value.title}</h5>
                                     <p>/ {value.map}</p>
                                 </div>
-                            </a>
+                            </Link>
                         )
                     })
                 }
@@ -105,37 +104,6 @@ export default function Main() {
 
         </section> 
         
-
-
-
-            
-        
-
-
-
-
-
-
-
-
-
-        {/* <div className='visual-main'>
-            <img src='/images/visual_main_01.jpg' />
-        </div>
-
-        <div className='container'>
-            {
-                data.map((value, i) => {
-                return (
-                    <div className='col-md-3'> 
-                    <img src={`/images/best_0${i+1}.png`} width='280px'/>
-                    <h3>{value.title}</h3>
-                    <p>{value.price}</p>
-                    </div>
-                )
-                })
-            }
-        </div> */}
 
 
     </>

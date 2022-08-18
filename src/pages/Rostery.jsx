@@ -10,7 +10,7 @@ export default function Rostery() {
       <wrap className='wrap'>
         <div className='outer_box'>
           <div className='nav_box'>
-            <a href='/'>홈</a> {'>'} <a href='/allRostery'>로스터리</a>
+            <Link to='/'>홈</Link> {'>'} <Link to='/allRostery'>로스터리</Link>
           </div>
           <div className='text_box'>
             <h2>All Rostery</h2>

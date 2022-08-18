@@ -30,9 +30,6 @@ export default function AllCoffee() {
           {
             all_product.map((value, i) => {
               return (
-                // <a href={value.link} className='product_box'>
-                // <Link path='/allCoffee/coffeeDetail' className='product_box'>
-                
                   
                  <>
                   <Link to='/allCoffee/coffeeDetail' className='product_box'>
@@ -55,7 +52,6 @@ export default function AllCoffee() {
                     </div>
                   </Link>
                   </>
-                // </a> 
               )
             })
           }
@@ -68,7 +64,7 @@ export default function AllCoffee() {
             all_product.map((value, i) => {
               if (value.id.includes('S')) {
                 return (
-                  <a href={value.link} className='product_box'>
+                  <Link to={value.link} className='product_box'>
                     
                     <div className='main_poto'>
                                       <img src={`./imags/all_product/${value.productImg}`} alt="이미지" width='280px'/>
@@ -81,7 +77,7 @@ export default function AllCoffee() {
                                   
                                   
                                   <div className='text_box'>
-                                      <h5 className='taste'>{value.taste01} & {value.taste02}</h5>
+                                      <h5 className='taste'>{value.taste01} {'&'} {value.taste02}</h5>
                                       <h5 className='title'>{value.name}</h5>
                                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                       <div className='logo'>
@@ -89,7 +85,7 @@ export default function AllCoffee() {
                                           <p>{value.cafeName}</p>
                                       </div>
                                   </div>
-                  </a>
+                  </Link>
                 )
               }
               
@@ -104,7 +100,7 @@ export default function AllCoffee() {
             all_product.map((value, i) => {
               if (value.id.includes('B')) {
                 return (
-                  <a href={value.link} className='product_box'>
+                  <Link to={value.link} className='product_box'>
                     
                     <div className='main_poto'>
                                       <img src={`./imags/all_product/${value.productImg}`} alt='이미지' width='280px'/>
@@ -125,7 +121,7 @@ export default function AllCoffee() {
                                           <p>{value.cafeName}</p>
                                       </div>
                                   </div>
-                  </a>
+                  </Link>
                 )
               }
               
@@ -140,7 +136,8 @@ export default function AllCoffee() {
             all_product.map((value, i) => {
               if (value.id.includes('D')) {
                 return (
-                  <a href={value.link} className='product_box'>
+                  <Link to={value.link} className='product_box'>
+                    
                     
                     <div className='main_poto'>
                                       <img src={`./imags/all_product/${value.productImg}`} alt="이미지" width='280px'/>
@@ -153,7 +150,7 @@ export default function AllCoffee() {
                                   
                                   
                                   <div className='text_box'>
-                                      <h5 className='taste'>{value.taste01} & {value.taste02}</h5>
+                                      <h5 className='taste'>{value.taste01} {'&'} {value.taste02}</h5>
                                       <h5 className='title'>{value.name}</h5>
                                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                       <div className='logo'>
@@ -161,7 +158,7 @@ export default function AllCoffee() {
                                           <p>{value.cafeName}</p>
                                       </div>
                                   </div>
-                  </a>
+                  </Link>
                 )
               }
               
